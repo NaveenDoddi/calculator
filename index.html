@@ -5,7 +5,78 @@
     <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" conten<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div id="maindiv">
+        
+        <table onclick="run()">
+            <tr>
+                <td colspan="4" id="inputField">
+                    <span id="inputLogo">Input</span>
+                    <span id="input"></span>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" id="inputField">
+                    <span id="outputLogo">Output</span>
+                    <span id="output"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="operator" onclick="ac()">AC</button></td>
+                <td><button class="operator" onclick="del()">del></button></td>
+                <td><button class="operator" onclick="factors()">facts</button></td>
+                <td><button class="operator" onclick="giveInput(this)">%</button></td>
+
+            </tr>
+            <tr>
+                <td><button class="operator" onclick="factorial()">!</button></td>
+                <td><button class="operator" onclick="suareRoot()">√</button></td>
+                <td><button class="operator" onclick=" giveInput(this)">**</button></td>
+                <td><button class="operator" onclick="giveInput(this)">/</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="number" onclick="giveInput(this)">7</button></td>
+                <td><button class="number" onclick="giveInput(this)">8</button></td>
+                <td><button class="number" onclick="giveInput(this)">9</button></td>
+                <td><button class="operator" onclick="giveInput(this)">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="giveInput(this)">4</button></td>
+                <td><button class="number" onclick="giveInput(this)">5</button></td>
+                <td><button class="number" onclick="giveInput(this)">6</button></td>
+                <td><button class="operator" id="sub" onclick="giveInput(this)">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="giveInput(this)">1</button></td>
+                <td><button class="number" onclick="giveInput(this)">2</button></td>
+                <td><button class="number" onclick="giveInput(this)">3</button></td>
+                <td><button class="operator" id="sum" onclick="giveInput(this)">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="giveInput(this)">.</button></td>
+                <td><button class="number" onclick="giveInput(this)">0</button></td>
+                <td><button class="number" onclick="giveInput(this)">00</button></td>
+                <td><button class="answer"onclick="ans()">=</button></td>   
+            </tr>
+        </table>
+        
+    </div>
+    <h6 style="text-align: center   ;">&copy; 2022 naveen calculator. All rights reserved.</h6>
+</body>
+</html>t="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
